@@ -1,0 +1,108 @@
+body {
+    text-align: center;
+    background-image: linear-gradient(to right, #f00, #ff0, #0f0, #00f);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    margin: 0;
+    font-family: cursive;
+}
+
+h3 {
+    font-size: 25px;
+    color: transparent;
+    background-image: linear-gradient(to left, #fff, #000);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    -webkit-background-clip: text;
+}
+
+#img {
+    height: 300px;
+    width: 300px;
+    border-radius: 45%;
+}
+
+#imga {
+    transition: transform.2s;
+    height: 300px;
+    width: 300px;
+    border-radius: 30%;
+}
+
+#imga:hover {
+    transform: scale(0.9);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%, 100%;
+    }
+
+    50% {
+        background-position: 100%, 0%;
+    }
+
+    100% {
+        background-position: 0%, 100%;
+    }
+}
+
+.hd {
+    font-size: 40px;
+    color: transparent;
+    background-image: linear-gradient(to right, #fff, #000);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    -webkit-background-clip: text;
+}
+
+h2 {
+    color: transparent;
+    background-image: linear-gradient(to left, #fff, #000);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    -webkit-background-clip: text;
+}
+
+#menu {
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    z-index: 10;
+    margin-left: 50%;
+}
+
+li {
+    float: left;
+    padding-top: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
+
+.link {
+    border-radius: 75px;
+}
+
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.link:hover a {
+    color: cornflowerblue;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    margin-top: 100px;
+}
